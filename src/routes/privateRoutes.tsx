@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { useAuthLogin } from "../hooks/useAuthLogin";
-import { PrivateRouteProps } from "../model/props/IPrivateRoute";
+import { IPrivateRouteProps } from "../model/props/IPrivateRoute";
 
-const PrivateRoute: React.FC<PrivateRouteProps> = ({
+const PrivateRoute: React.FC<IPrivateRouteProps> = ({
   component: Component,
   ...otherProps
 }) => {
