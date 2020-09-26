@@ -8,6 +8,36 @@ sans-serif;
 $font-color-1:#fff;
 $font-color-2:#BE50B1;
 $font-color-3:#9D9B9B;
+$font-color-4: transparent;
 
 //background color
 $background-color:linear-gradient(92.05deg, #F180C1 4.55%, #A450C9 95.79%);
+
+
+
+.buttom {
+  width: 298px;
+  height: 60px;
+  border-radius: 5px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  margin: 10px 0;
+}
+
+.buttom--primary {
+  @extend .buttom;
+  background: $font-color-1;
+  color: $font-color-2;
+}
+
+.buttom--secundary {
+  @extend .buttom;
+  background: $font-color-4;
+  color: $font-color-1;
+  border: 1px solid $font-color-1;
+}

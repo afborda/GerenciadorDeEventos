@@ -1,12 +1,8 @@
 import React from "react";
 import "./style.scss";
 
-const login = () => {
-  return (
-    <div>
-      <h1>Login</h1>
-    </div>
-  );
+const Login: React.FC = ({ children }) => {
+  return <div className="background-login-image">{children}</div>;
 };
 
-export default login;
+export default Login;
