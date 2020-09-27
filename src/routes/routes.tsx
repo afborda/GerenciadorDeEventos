@@ -2,11 +2,13 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "../components/home";
 import InitialLogin from "../components/login/initialLogin";
+import LoginForm from "../components/login/registerForm";
 import PrivateRoute from "./privateRoutes";
 
 const Routes: React.FC = () => (
   <Switch>
     <Route name="Login" path="/login" component={InitialLogin} />
+    <Route name="Login-form" exact path="/login-form" component={LoginForm} />
     <PrivateRoute name="Home" exact path="/" component={Home} />
   </Switch>
 );

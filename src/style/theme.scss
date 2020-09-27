@@ -9,6 +9,7 @@ $font-color-1:#fff;
 $font-color-2:#BE50B1;
 $font-color-3:#9D9B9B;
 $font-color-4: transparent;
+$font-color-5:#565656;
 
 //background color
 $background-color:linear-gradient(92.05deg, #F180C1 4.55%, #A450C9 95.79%);
@@ -40,4 +41,25 @@ $background-color:linear-gradient(92.05deg, #F180C1 4.55%, #A450C9 95.79%);
   background: $font-color-4;
   color: $font-color-1;
   border: 1px solid $font-color-1;
+}
+
+.input {
+  width: 271px;
+  height: 40px;
+  left: 52px;
+  top: 196px;
+  border: 1px solid $font-color-3;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.label {
+  width: 41px;
+  height: 18px;
+  left: 52px;
+  top: 171px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: $font-color-5;
 }

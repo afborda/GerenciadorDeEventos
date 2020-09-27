@@ -15,7 +15,12 @@ const InitialLogin: React.FC = () => {
           </div>
           <div>
             <Buttom typeButton="buttom--primary" textButton="Criar conta" />
-            <Buttom typeButton="buttom--secundary" textButton="Entrar" />
+            <Buttom
+              to="login-form"
+              typeButton="buttom--secundary"
+              textButton="Entrar"
+            />
+            <p className="text-triider">Desafio Front end Triider</p>
           </div>
         </div>
       </Login>
