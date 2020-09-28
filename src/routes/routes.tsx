@@ -1,13 +1,26 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "../components/home";
-import InitialLogin from "../components/login/initialLogin";
-import PrivateRoute from "./privateRoutes";
+import InitialLogin from "../components/initialLogin";
+import LoginForm from "../components/loginForm";
+import RegisterForm from "../components/registerForm";
+import RegisterDate from "../components/registerDate";
 
 const Routes: React.FC = () => (
   <Switch>
-    <Route name="Login" path="/login" component={InitialLogin} />
-    <PrivateRoute name="Home" exact path="/" component={Home} />
+    <Route exact name="Login" path="/" component={InitialLogin} />
+    <Route name="Login-form" exact path="/login" component={LoginForm} />
+    <Route
+      name="register-form"
+      exact
+      path="/register-form"
+      component={RegisterForm}
+    />
+    <Route
+      name="register-form"
+      exact
+      path="/register-form-date"
+      component={RegisterDate}
+    />
   </Switch>
 );
 

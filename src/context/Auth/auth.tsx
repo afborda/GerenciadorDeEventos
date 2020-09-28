@@ -8,7 +8,7 @@ const AuthContext = createContext<{
 });
 
 const AuthProvider: React.FC = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState<any>();
+  const [currentUser] = useState<any>();
 
   useEffect(() => {}, []);
 

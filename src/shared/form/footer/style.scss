@@ -1,0 +1,23 @@
+@import "../../../style/theme.scss";
+
+.login-options {
+  display: flex;
+  flex-Direction: column;
+  justify-Content: center;
+  align-Items: center;
+}
+
+.not-account {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: $font-color-5;
+  padding: 10px 0;
+}
+
+.new-account {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: $font-color-7;
+}
