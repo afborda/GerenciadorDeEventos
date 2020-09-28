@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Footer from "../../../../shared/form/footer";
-import CustomInput from "../../../../shared/form/input";
+import Footer from "../../shared/form/footer";
+import CustomInput from "../../shared/form/input";
 
 import "./style.scss";
 

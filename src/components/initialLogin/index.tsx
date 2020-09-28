@@ -1,6 +1,6 @@
 import React from "react";
-import Login from "..";
-import Buttom from "../../../shared/buttom";
+import Login from "../login";
+import Buttom from "../../shared/buttom";
 
 import "./styled.scss";
 const InitialLogin: React.FC = () => {

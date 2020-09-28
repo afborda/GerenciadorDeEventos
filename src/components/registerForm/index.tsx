@@ -1,6 +1,6 @@
 import React from "react";
-import Login from "..";
-import NewAccount from "./newAccount";
+import Login from "../login";
+import NewAccount from "../newAccount";
 
 // import { Container } from './styles';
 

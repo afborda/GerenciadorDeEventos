@@ -1,9 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import InitialLogin from "../components/login/initialLogin";
-import LoginForm from "../components/login/loginForm";
-import RegisterForm from "../components/login/registerForm";
-import RegisterDate from "../components/login/registerForm/registerDate";
+import InitialLogin from "../components/initialLogin";
+import LoginForm from "../components/loginForm";
+import RegisterForm from "../components/registerForm";
+import RegisterDate from "../components/registerDate";
 
 const Routes: React.FC = () => (
   <Switch>

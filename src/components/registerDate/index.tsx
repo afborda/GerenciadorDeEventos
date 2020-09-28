@@ -1,6 +1,6 @@
 import React from "react";
-import Login from "../..";
-import CustomSelect from "../../../../shared/form/select";
+import Login from "../login";
+import CustomSelect from "../../shared/form/select";
 
 // import { Container } from './styles';
 
