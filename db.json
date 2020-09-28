@@ -1,5 +1,37 @@
 {
 
+  "users": [{
+    "id": 1,
+    "name": "usuário teste",
+    "email": "teste@teste.com",
+    "category": "magician",
+    "week_days": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "saturday",
+      "sunday"
+    ],
+    "day_shifts": [
+      "morning",
+      "afternoon",
+      "night"
+    ],
+    "price": 200
+  }],
+  "events": [{
+    "id": 1,
+    "user_id": 1,
+    "name": "evento teste",
+    "date": "1574433747316",
+    "week_day": "friday",
+    "day_shift": "morning",
+    "address": "Rua Teste, 200 - 221B"
+  }],
+
+
   "user": [{
       "id": 1,
       "name": "Abner fonseca",

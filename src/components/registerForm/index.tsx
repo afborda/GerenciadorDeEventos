@@ -6,7 +6,7 @@ import NewAccount from "../newAccount";
 
 const RegisterForm: React.FC = () => {
   return (
-    <Login>
+    <Login title="Criar conta">
       <NewAccount />
     </Login>
   );

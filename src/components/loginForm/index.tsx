@@ -10,7 +10,7 @@ const LoginForm: React.FC = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   return (
-    <Login>
+    <Login title="Entrar">
       <div className="title-login">
         <h1>Entrar</h1>
       </div>

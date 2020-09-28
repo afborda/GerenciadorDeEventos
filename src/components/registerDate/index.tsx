@@ -8,7 +8,7 @@ const RegisterDate: React.FC = () => {
   const [produto, setProduto] = React.useState("");
 
   return (
-    <Login>
+    <Login title="Criar conta">
       <div>
         <CustomSelect
           options={["Notebook", "Smartphone", "Tablet"]}
