@@ -1,9 +1,6 @@
 import React from "react";
+import { ILogin } from "../../model/props/ILogin";
 import "./style.scss";
-
-interface ILogin {
-  card?: boolean;
-}
 
 const Login: React.FC<ILogin> = ({ children, card }) => {
   return (

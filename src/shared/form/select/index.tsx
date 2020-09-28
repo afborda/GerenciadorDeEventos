@@ -4,29 +4,40 @@ interface Iselect {
   options: any;
   value: string;
   setValue: any;
+  id: string;
+  label: string;
 }
 
 const CustomSelect: React.FC<Iselect> = ({
   options,
   value,
   setValue,
+  id,
+  label,
   ...props
 }) => {
   return (
-    <select
-      value={value}
-      onChange={({ target }) => setValue(target.value)}
-      {...props}
-    >
-      <option value="" disabled>
-        Selecione
-      </option>
-      {options.map((option: any) => (
-        <option key={option} value={option}>
-          {option}
+    <>
+      <label className="label" htmlFor={label}>
+        {label}
+      </label>
+      <select
+        id={id}
+        className="input-select"
+        value={value}
+        onChange={({ target }) => setValue(target.value)}
+        {...props}
+      >
+        <option value="" disabled>
+          Selecione
         </option>
-      ))}
-    </select>
+        {options.map((option: any) => (
+          <option key={option} value={option}>
+            {option}
+          </option>
+        ))}
+      </select>
+    </>
   );
 };
 
