@@ -11,6 +11,8 @@ const RegisterDate: React.FC = () => {
     <Login title="Criar conta">
       <div>
         <CustomSelect
+          id="service"
+          label="Selecione sua categoria"
           options={["Notebook", "Smartphone", "Tablet"]}
           value={produto}
           setValue={setProduto}
