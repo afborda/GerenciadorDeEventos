@@ -107,5 +107,14 @@ $background-color:linear-gradient(92.05deg, #F180C1 4.55%, #A450C9 95.79%);
 .card--background {
   @extend .card;
   background: $font-color-1;
+}
+
+.input-select {
+  width: 271px;
+  height: 40px;
+  border: 1px solid $font-color-6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: $font-color-1;
 
 }

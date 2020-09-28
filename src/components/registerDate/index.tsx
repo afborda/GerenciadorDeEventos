@@ -9,8 +9,10 @@ const RegisterDate: React.FC = () => {
 
   return (
     <Login>
-      <div>
+      <div style={{ margin: "30px" }}>
         <CustomSelect
+          id="service"
+          label="Selecione sua categoria"
           options={["Notebook", "Smartphone", "Tablet"]}
           value={produto}
           setValue={setProduto}
