@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Login from "../login";
-import CustomInput from "../../shared/form/input";
 import Footer from "../../shared/form/footer";
+import CustomInput from "../../shared/form/input";
+import Login from "../login";
+
 import "./style.scss";
 
 const LoginForm: React.FC = () => {
