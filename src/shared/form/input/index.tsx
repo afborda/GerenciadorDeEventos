@@ -1,8 +1,7 @@
-import { type } from "os";
 import React, { useEffect, useState } from "react";
 import { IInputForm } from "../../../model/props/IInputForm";
 import "./style.scss";
-const Input: React.FC<IInputForm> = ({
+const CustomInput: React.FC<IInputForm> = ({
   label,
   id,
   value,
@@ -19,12 +18,12 @@ const Input: React.FC<IInputForm> = ({
   return (
     <>
       {password ? (
-        <>
+        <div className="input--style input-space--style">
           <label className="label" htmlFor={id}>
             {label}
           </label>
           <input
-            className="input"
+            className="input "
             type={type}
             name={id}
             id={id}
@@ -32,9 +31,9 @@ const Input: React.FC<IInputForm> = ({
             onChange={({ target }: any) => setValue(target.value)}
             {...props}
           />
-        </>
+        </div>
       ) : (
-        <>
+        <div className="input--style  input-space--style">
           <label className="label" htmlFor={id}>
             {label}
           </label>
@@ -47,10 +46,10 @@ const Input: React.FC<IInputForm> = ({
             onChange={({ target }: any) => setValue(target.value)}
             {...props}
           />
-        </>
+        </div>
       )}
     </>
   );
 };
 
-export default Input;
+export default CustomInput;

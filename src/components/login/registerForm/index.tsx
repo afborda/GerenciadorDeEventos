@@ -1,37 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Login from "..";
-import Input from "../../../shared/form/input";
-import "./style.scss";
+import NewAccount from "./newAccount";
 
-const LoginForm: React.FC = () => {
-  const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
+// import { Container } from './styles';
+
+const RegisterForm: React.FC = () => {
   return (
     <Login>
-      <div className="card-container">
-        <div className="card">
-          <form className="form-login">
-            <Input
-              id="nome"
-              label="Nome"
-              value={name}
-              setValue={setName}
-              type="text"
-              required
-            />
-            <Input
-              id="email"
-              label="Password"
-              value={mail}
-              setValue={setMail}
-              type="password"
-              required
-            />
-          </form>
-        </div>
-      </div>
+      <NewAccount />
     </Login>
   );
 };
 
-export default LoginForm;
+export default RegisterForm;

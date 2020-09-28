@@ -1,0 +1,54 @@
+@import "../../../style/theme.scss";
+
+
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.form-login--style {
+  @extend .form-login;
+  margin-top: 65px;
+}
+
+.forgot-my-password {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+.forgot-my-password a {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: $font-color-3;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+
+
+.input--style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.input-space--style {
+  margin-top: 20px;
+}
+
+.title-login {
+  position: absolute;
+  left: 36%;
+  top: 3%;
+
+  & h1 {
+    color: $font-color-1;
+    font-weight: 400;
+  }
+}

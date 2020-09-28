@@ -6,7 +6,7 @@ import "./styled.scss";
 const InitialLogin: React.FC = () => {
   return (
     <div>
-      <Login>
+      <Login card={true}>
         <div className="initiallogin-container">
           <div>
             <h1 className="title">
@@ -14,9 +14,13 @@ const InitialLogin: React.FC = () => {
             </h1>
           </div>
           <div>
-            <Buttom typeButton="buttom--primary" textButton="Criar conta" />
             <Buttom
-              to="login-form"
+              to="/register-form"
+              typeButton="buttom--primary"
+              textButton="Criar conta"
+            />
+            <Buttom
+              to="/login"
               typeButton="buttom--secundary"
               textButton="Entrar"
             />
