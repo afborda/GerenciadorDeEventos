@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Buttom from "../../shared/buttom";
 import Footer from "../../shared/form/footer";
 import CustomInput from "../../shared/form/input";
 
@@ -40,7 +41,11 @@ const NewAccount: React.FC = () => {
       />
 
       <div>
-        <button className="buttom--internal space-buttom">Avançar</button>
+        <Buttom
+          textButton="Avançar"
+          typeButton="buttom--internal space-buttom"
+          to="/register-form-date"
+        />
       </div>
       <Footer titleOne="Já possui uma conta?" titleTwo="Entrar" to="/login" />
     </form>

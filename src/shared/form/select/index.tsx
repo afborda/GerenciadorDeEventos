@@ -14,10 +14,11 @@ const CustomSelect: React.FC<Iselect> = ({
   setValue,
   id,
   label,
+
   ...props
 }) => {
   return (
-    <>
+    <div style={{ display: "grid" }}>
       <label className="label" htmlFor={label}>
         {label}
       </label>
@@ -37,7 +38,7 @@ const CustomSelect: React.FC<Iselect> = ({
           </option>
         ))}
       </select>
-    </>
+    </div>
   );
 };
 
