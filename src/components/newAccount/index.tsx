@@ -1,49 +1,96 @@
-import React, { useState } from "react";
+import React, { FormEvent, useState, ChangeEvent } from "react";
+import { useHistory } from "react-router-dom";
+import Buttom from "../../shared/buttom";
 import Footer from "../../shared/form/footer";
-import CustomInput from "../../shared/form/input";
+import CustomInput from "../../shared/form/Input";
+
+import { useNewUser } from "../../hooks";
 
 import "./style.scss";
 
+interface Option {
+  id: string;
+  value: string;
+}
+
+interface INewUser {
+  name: string;
+  email: string;
+  password: string;
+  category: Option;
+  week_days: Option[];
+  day_shifts: Option[];
+  price: string;
+}
+
 const NewAccount: React.FC = () => {
-  const [user, setUser] = useState({
+  const history = useHistory();
+  const { newUser, setNewUser } = useNewUser();
+  const [newUserFormData, setNewUserFormData] = useState<INewUser>({
     name: "",
-    mail: "",
+    email: "",
     password: "",
+    category: {
+      id: "",
+      value: "",
+    },
+    week_days: [],
+    day_shifts: [],
+    price: "",
   });
 
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setNewUserFormData({ ...newUserFormData, [name]: value });
+  };
+
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
+
+    const { name, email, password } = newUserFormData;
+    setNewUser({
+      ...newUser,
+      name,
+      email,
+      password,
+    });
+
+    history.push("/register-form-date");
+  };
   return (
-    <form className="form-login">
-      <CustomInput
-        id="name"
-        label="Qual seu nome?"
-        value={user.name}
-        setValue={setUser}
-        type="text"
-        required
-      />
+    <div>
+      <form onSubmit={handleSubmit} className="form-login">
+        <CustomInput
+          id="name"
+          label="Qual seu nome?"
+          setValue={handleInputChange}
+          type="text"
+          required
+        />
 
-      <CustomInput
-        id="mail"
-        label="Qual seu email?"
-        value={user.mail}
-        setValue={setUser}
-        type="mail"
-        required
-      />
-      <CustomInput
-        id="password"
-        label="Crie uma senha?"
-        value={user.password}
-        setValue={setUser}
-        type="password"
-        required
-      />
+        <CustomInput
+          id="email"
+          label="Qual seu email?"
+          setValue={handleInputChange}
+          type="email"
+          required
+        />
+        <CustomInput
+          id="password"
+          label="Crie uma senha?"
+          setValue={handleInputChange}
+          type="password"
+          required
+        />
 
-      <div>
-        <button className="buttom--internal space-buttom">Avançar</button>
-      </div>
+        <Buttom
+          type="submit"
+          textButton="Avançar"
+          typeButton="buttom--internal space-buttom"
+        />
+      </form>
       <Footer titleOne="Já possui uma conta?" titleTwo="Entrar" to="/login" />
-    </form>
+    </div>
   );
 };
 

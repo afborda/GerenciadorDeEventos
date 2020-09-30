@@ -1,0 +1,52 @@
+@import "../../style/global.scss";
+
+.list-item {
+  display: flex;
+  list-style-type: none;
+}
+
+.list-item-circle {
+  @extend .list-item;
+  justify-content: space-around;
+}
+
+.list-item-rectangle {
+  @extend .list-item;
+  justify-content: space-evenly;
+}
+
+.base-item {
+  color: $font-color-1;
+  background-color: $font-color-8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  &p {
+    font-weight: bold;
+  }
+}
+
+.status-active {
+  background: $background-color-2 !important;
+  font-weight: bold;
+}
+
+
+.circle {
+  @extend .base-item;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+}
+
+
+
+.rectangle {
+  @extend .base-item;
+  width: 84px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: $background-color;
+}

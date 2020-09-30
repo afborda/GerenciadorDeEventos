@@ -4,7 +4,6 @@ import "./style.scss";
 const CustomInput: React.FC<IInputForm> = ({
   label,
   id,
-  value,
   setValue,
   type,
   ...props
@@ -23,12 +22,11 @@ const CustomInput: React.FC<IInputForm> = ({
             {label}
           </label>
           <input
-            className="input "
+            className="input"
             type={type}
             name={id}
             id={id}
-            value={value}
-            onChange={({ target }: any) => setValue(target.value)}
+            onChange={(event) => setValue(event)}
             {...props}
           />
         </div>
@@ -42,8 +40,7 @@ const CustomInput: React.FC<IInputForm> = ({
             type={type}
             name={id}
             id={id}
-            value={value}
-            onChange={({ target }: any) => setValue(target.value)}
+            onChange={(event) => setValue(event)}
             {...props}
           />
         </div>

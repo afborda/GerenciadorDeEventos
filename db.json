@@ -4,6 +4,7 @@
     "id": 1,
     "name": "usuário teste",
     "email": "teste@teste.com",
+    "password": "123",
     "category": "magician",
     "week_days": [
       "monday",
@@ -31,376 +32,64 @@
     "address": "Rua Teste, 200 - 221B"
   }],
 
-
-  "user": [{
+  "week_days": [{
       "id": 1,
-      "name": "Abner fonseca",
-      "mail": "abner.borda@gmail.com",
-      "password": "Brasil03",
-      "price": 200.00,
-      "category": [{
-          "id": 1,
-          "name": "Palhaço"
-        }
-
-      ],
-      "availability": [{
-          "id": 1,
-          "name": "Segunda",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 2,
-          "name": "Terça",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 3,
-          "name": "Quarta",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 4,
-          "name": "Quinta",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 5,
-          "name": "Sexta",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 6,
-          "name": "Sabado",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 7,
-          "name": "Domingo",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        }
-
-      ]
-    },
-    {
-      "id": 1,
-      "name": "Joao Silva",
-      "mail": "joaoSilva@gmail.com",
-      "password": "Brasil04",
-      "price": 500.00,
-      "category": [{
-          "id": 1,
-          "name": "Palhaço"
-        }
-
-      ],
-      "availability": [{
-          "id": 1,
-          "name": "Segunda",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 2,
-          "name": "Terça",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 3,
-          "name": "Quarta",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 4,
-          "name": "Quinta",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 5,
-          "name": "Sexta",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 6,
-          "name": "Sabado",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        },
-        {
-          "id": 7,
-          "name": "Domingo",
-          "open": true,
-          "rotation": [{
-              "id": 1,
-              "shift": "Manha",
-              "open": true
-            },
-            {
-              "id": 2,
-              "shift": "Tarde",
-              "open": true
-            },
-            {
-              "id": 3,
-              "shift": "Noite",
-              "open": true
-            }
-
-          ]
-
-        }
-
-      ]
-    }
-
-
-  ],
-
-  "category": [{
-      "id": 1,
-      "name": "Palhaço"
+      "value": "S"
     },
     {
       "id": 2,
-      "name": "Mágico"
+      "value": "T"
     },
     {
       "id": 3,
-      "name": "Malabarista"
+      "value": "Q"
+    },
+    {
+      "id": 4,
+      "value": "Q"
+    },
+    {
+      "id": 5,
+      "value": "S"
+    },
+    {
+      "id": 6,
+      "value": "S"
+    },
+    {
+      "id": 7,
+      "value": "D"
     }
-  ]
+  ],
 
+
+  "category": [{
+      "id": 1,
+      "value": "Palhaço"
+    },
+    {
+      "id": 2,
+      "value": "Mágico"
+    },
+    {
+      "id": 3,
+      "value": "Malabarista"
+    }
+  ],
+
+  "day_shift": [{
+      "id": 1,
+      "value": "Manha"
+    },
+    {
+      "id": 2,
+      "value": "Tarde"
+    },
+    {
+      "id": 3,
+      "value": "Noite"
+    }
+
+  ]
 
 }

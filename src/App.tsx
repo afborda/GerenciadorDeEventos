@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { AuthProvider } from "./context/Auth/auth";
+import { NewUserProvider } from "./context/RegisterContext";
 import Routes from "./routes/routes";
 
 import "./style/global.scss";
 
 const App: React.FC = () => (
-  <AuthProvider>
+  <NewUserProvider>
     <BrowserRouter>
       <Routes />
     </BrowserRouter>
-  </AuthProvider>
+  </NewUserProvider>
 );
 
 export default App;
