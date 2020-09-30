@@ -13,6 +13,7 @@ $font-color-5:#565656;
 $font-color-6:#cccccc;
 $font-color-7:#ED7EC2;
 $font-color-8:#eeeeee;
+$font-color-9:#EE7EC2;
 
 
 //background color
@@ -32,12 +33,18 @@ $background-color-2:linear-gradient(180deg, rgba(237, 125, 194, 0.8) 0%, rgba(23
   text-align: center;
   border: none;
   margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttom--primary {
   @extend .buttom;
   background: $font-color-1;
   color: $font-color-2;
+
+
+
 }
 
 .buttom--secundary {
@@ -45,17 +52,21 @@ $background-color-2:linear-gradient(180deg, rgba(237, 125, 194, 0.8) 0%, rgba(23
   background: $font-color-4;
   color: $font-color-1;
   border: 1px solid $font-color-1;
+
+
 }
 
 .buttom--internal {
   @extend .buttom;
   width: 271px;
   height: 50px;
-  left: 52px;
-  top: 391px;
   background: $background-color;
   border-radius: 5px;
   color: $font-color-1;
+
+
+
+
 }
 
 .spacer {

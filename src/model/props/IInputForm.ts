@@ -1,8 +1,9 @@
+import { SetStateAction, ChangeEvent } from "react";
+import { Dispatch } from "react";
 export interface IInputForm {
   label: string;
   id: string;
-  value: string;
-  setValue: any;
+  setValue: (event: ChangeEvent<HTMLInputElement>) => void;
   required?: any;
   type: string;
 }

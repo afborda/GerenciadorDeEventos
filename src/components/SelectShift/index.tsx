@@ -1,19 +1,20 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
-import "./style.scss";
+
+import "./index.scss";
 
 interface Option {
   id: string;
   value: string;
 }
 
-interface ISelectAvailableDay {
+interface ISelectShift {
   options: Option[];
   setValue: Dispatch<SetStateAction<Option[]>>;
   label: string;
   className?: string;
 }
 
-const SelectAvailableDay: React.FC<ISelectAvailableDay> = ({
+const SelectShift: React.FC<ISelectShift> = ({
   setValue,
   options,
   label,
@@ -24,7 +25,7 @@ const SelectAvailableDay: React.FC<ISelectAvailableDay> = ({
 
   const HandleSelectedItems = (option: Option) => {
     const alreadySelected = selectedItems.findIndex(
-      (weekDay) => weekDay === option
+      (weekDay) => weekDay.id === option.id
     );
     if (alreadySelected >= 0) {
       const filteredItems = selectedItems.filter(
@@ -63,4 +64,4 @@ const SelectAvailableDay: React.FC<ISelectAvailableDay> = ({
   );
 };
 
-export default SelectAvailableDay;
+export default SelectShift;

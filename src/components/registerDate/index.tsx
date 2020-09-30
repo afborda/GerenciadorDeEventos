@@ -1,66 +1,116 @@
-import React, { useState } from "react";
-import Login from "../login";
+import React, { useEffect, useState, FormEvent, ChangeEvent } from "react";
+import LoginContainer from "../loginContainer";
 import CustomSelect from "../../shared/form/select";
 import SelectAvailableDay from "../SelectAvailableDay";
-import CustomInput from "../../shared/form/input";
+import SelectShift from "../SelectShift";
+import CustomInput from "../../shared/form/Input";
 import Buttom from "../../shared/buttom";
+import { getDays, getCategory, getShift } from "../../service/userService";
 
+import { useNewUser } from "../../hooks";
 import "./style.scss";
+interface Weekday {
+  id: string;
+  value: string;
+}
+
+interface Shift {
+  id: string;
+  value: string;
+}
+
+interface Category {
+  id: string;
+  value: string;
+}
 
 const RegisterDate: React.FC = () => {
-  const [weekDay, setWeekDay] = useState("");
-  const [day, setDay] = useState(false);
-  const [category, setCategory] = useState("");
+  const { newUser, setNewUser } = useNewUser();
+  const [weekDaysOptions, setWeekDaysOptions] = useState<Weekday[]>([]);
+  const [shiftsOptions, setShiftsOptions] = useState<Shift[]>([]);
+  const [categoryOptions, setCategogyOptions] = useState<Category[]>([]);
+  const [weekDays, setWeekDays] = useState<Weekday[]>([]);
+  const [category, setCategory] = useState<Category>({ id: "", value: "" });
   const [price, setPrice] = useState("");
-  const [shift, setShift] = useState("");
+  const [shifts, setShifts] = useState<Shift[]>([]);
+
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+    setPrice(value);
+  };
+
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
+    setNewUser({
+      ...newUser,
+      category,
+      day_shifts: shifts,
+      price,
+      week_days: weekDays,
+    });
+
+    console.log(newUser);
+  };
+
+  useEffect(() => {
+    const loadWeekDays = async () => {
+      const response = await getDays();
+      setWeekDaysOptions(response);
+    };
+
+    const loadCategories = async () => {
+      const response = await getCategory();
+      setCategogyOptions(response);
+    };
+
+    const loadShift = async () => {
+      const response = await getShift();
+      setShiftsOptions(response);
+    };
+
+    loadWeekDays();
+    loadCategories();
+    loadShift();
+  }, []);
 
   return (
-    <Login title="Criar conta">
-      <form className="select-container">
+    <LoginContainer title="Criar conta">
+      <form onSubmit={handleSubmit} className="select-container">
         <CustomSelect
           id="service"
           label="Selecione sua categoria"
-          options={["Notebook", "Smartphone", "Tablet"]}
+          options={categoryOptions}
           value={category}
           setValue={setCategory}
         />
         <SelectAvailableDay
           label="Selecione os dias que trabalhará?"
-          options={[
-            {
-              day: "S",
-              id: "1",
-            },
-            { day: "T", id: "2" },
-            { day: "Q", id: "3" },
-            { day: "Q", id: "4" },
-            { day: "S", id: "5" },
-            { day: "S", id: "6" },
-            { day: "D", id: "7" },
-          ]}
-          value={weekDay}
-          setValue={setWeekDay}
+          options={weekDaysOptions}
+          setValue={setWeekDays}
           className="circle"
         />
-        {/* <SelectAvailableDay
+        <SelectShift
           label="Selecione os turnos que trabalhará?"
-          options={["Manha", "Tarde", "Noite"]}
-          value={shift}
-          setValue={setShift}
+          options={shiftsOptions}
+          setValue={setShifts}
           className="rectangle"
-        /> */}
+        />
 
         <CustomInput
           label="Informe o preço do seu serviço"
           id="value"
           type="text"
-          setValue={setPrice}
-          value={price}
+          setValue={handleInputChange}
           required
         />
-        <Buttom textButton="Criar conta" typeButton="buttom--internal" to="" />
+        <Buttom
+          type="submit"
+          textButton="Criar conta"
+          typeButton="buttom--internal"
+          to=""
+        />
       </form>
-    </Login>
+    </LoginContainer>
   );
 };
 

@@ -4,6 +4,7 @@
     "id": 1,
     "name": "usuário teste",
     "email": "teste@teste.com",
+    "password": "123",
     "category": "magician",
     "week_days": [
       "monday",
@@ -31,22 +32,64 @@
     "address": "Rua Teste, 200 - 221B"
   }],
 
-
+  "week_days": [{
+      "id": 1,
+      "value": "S"
+    },
+    {
+      "id": 2,
+      "value": "T"
+    },
+    {
+      "id": 3,
+      "value": "Q"
+    },
+    {
+      "id": 4,
+      "value": "Q"
+    },
+    {
+      "id": 5,
+      "value": "S"
+    },
+    {
+      "id": 6,
+      "value": "S"
+    },
+    {
+      "id": 7,
+      "value": "D"
+    }
+  ],
 
 
   "category": [{
       "id": 1,
-      "name": "Palhaço"
+      "value": "Palhaço"
     },
     {
       "id": 2,
-      "name": "Mágico"
+      "value": "Mágico"
     },
     {
       "id": 3,
-      "name": "Malabarista"
+      "value": "Malabarista"
     }
-  ]
+  ],
 
+  "day_shift": [{
+      "id": 1,
+      "value": "Manha"
+    },
+    {
+      "id": 2,
+      "value": "Tarde"
+    },
+    {
+      "id": 3,
+      "value": "Noite"
+    }
+
+  ]
 
 }
