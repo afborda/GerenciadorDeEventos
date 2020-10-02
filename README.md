@@ -12,32 +12,43 @@
 ### `Componentes criados`
 
 - Button
-  props: - type - typeButton - textButton
-  -Footer
-  props: - to - titleOne - titleTwo
-  CustomInput
-  props: - label - id - seValue - required - type
-  CustomSelect
-  props:
-  - options: Option[];
-  - value: Option;
-  - setValue: Dispatch<SetStateAction<Option>>;
-  - id: string;
-  - label: string;
+  - props
+    - type
+    - typeButton
+    - textButton
+- Footer
+  - props
+    - to
+    - titleOne
+    - titleTwo
+- CustomInput
+  - props
+    - label
+    - id
+    - seValue
+    - required
+    - type
+- CustomSelect
+  - props:
+    - options: Option[];
+    - value: Option;
+    - setValue: Dispatch<SetStateAction<Option>>;
+    - id: string;
+    - label: string;
 
 ### `Estrutura de pastas`
 
-src
-assets
-components
-context
-hooks
-model
-props
-routes
-service
-shared
-style
+- src
+- assets
+- components
+- context
+- hooks
+- model
+- props
+- routes
+- service
+- shared
+- style
 
 ### `Executando aplicação`
 
