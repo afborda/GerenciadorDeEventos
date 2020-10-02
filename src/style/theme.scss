@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
 
 //Fonts
-$font: "Quicksand", sans-serif;
+$font: "Quicksand",
+sans-serif;
 
 //color fonts
 $font-color-1: #fff;
@@ -15,16 +16,13 @@ $font-color-8: #eeeeee;
 $font-color-9: #ee7ec2;
 $font-color-a: #e5e5e5;
 $font-color-b: #e77cca;
-$font-color-c: #e77cca;
-$font-color-d: #e77cca;
+
 
 //background color
 $background-color: linear-gradient(92.05deg, #f180c1 4.55%, #a450c9 95.79%);
-$background-color-2: linear-gradient(
-  180deg,
+$background-color-2: linear-gradient(180deg,
   rgba(237, 125, 194, 0.8) 0%,
-  rgba(236, 125, 194, 0.8) 100%
-);
+  rgba(236, 125, 194, 0.8) 100%);
 
 .buttom {
   width: 298px;
