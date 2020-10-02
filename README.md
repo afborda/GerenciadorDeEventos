@@ -66,5 +66,5 @@ Obs: Caso de erro de 401 jfrog remova o yarn.lock e de yarn install ou npm insta
 
 ## `Video Abner Fonseca`
 
-[BREVE EXPLICAÇÂO DO SISTEMA](https://drive.google.com/file/d/1cXegrHk1Dqh3qAIfRmJjx1CYH6Uqaltw/view).
-[FRONT END](https://drive.google.com/file/d/1loB_VMgnq4zcQh1ojGHCK7m71U-zRmt-/view).
+- [BREVE EXPLICAÇÂO DO SISTEMA](https://drive.google.com/file/d/1cXegrHk1Dqh3qAIfRmJjx1CYH6Uqaltw/view).
+- [FRONT END](https://drive.google.com/file/d/1loB_VMgnq4zcQh1ojGHCK7m71U-zRmt-/view).
