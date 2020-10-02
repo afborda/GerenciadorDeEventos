@@ -12,32 +12,44 @@
 ### `Componentes criados`
 
 - Button
-  props: - type - typeButton - textButton
-  -Footer
-  props: - to - titleOne - titleTwo
-  CustomInput
-  props: - label - id - seValue - required - type
-  CustomSelect
-  props:
-  - options: Option[];
-  - value: Option;
-  - setValue: Dispatch<SetStateAction<Option>>;
-  - id: string;
-  - label: string;
+  - props
+    - type
+    - typeButton
+    - textButton
+- Footer
+  - props
+    - to
+    - titleOne
+    - titleTwo
+- CustomInput
+  - props
+    - label
+    - id
+    - seValue
+    - required
+    - type
+- CustomSelect
+  - props:
+    - options: Option[];
+    - value: Option;
+    - setValue: Dispatch<SetStateAction<Option>>;
+    - id: string;
+    - label: string;
 
 ### `Estrutura de pastas`
 
-src
-assets
-components
-context
-hooks
-model
-props
-routes
-service
-shared
-style
+- src
+- assets
+- components
+- context
+- hooks
+- model
+  - props
+- props
+- routes
+- service
+- shared
+- style
 
 ### `Executando aplicação`
 
@@ -49,5 +61,7 @@ style
 1. Execute yarn startDB ( para que seu banco de dados suba em uma porta diferente de sua aplicação)
 1. Coloque na barra de busca do seu navegador http://localhost:3000/
    Tudo pronto!
+
+[BREVE EXPLICAÇÂO DO SISTEMA] (https://drive.google.com/file/d/1cXegrHk1Dqh3qAIfRmJjx1CYH6Uqaltw/view)
 
 Obs: Caso de erro de 401 jfrog remova o yarn.lock e de yarn install ou npm install novamente
