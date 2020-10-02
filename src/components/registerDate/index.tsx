@@ -15,21 +15,7 @@ import {
 import { useNewUser } from "../../hooks";
 import "./style.scss";
 import { useHistory } from "react-router-dom";
-import { INewUser } from "../../model/INewUser";
-interface Weekday {
-  id: string;
-  value: string;
-}
-
-interface Shift {
-  id: string;
-  value: string;
-}
-
-interface Option {
-  id: string;
-  value: string;
-}
+import { Option, Shift, Weekday } from "../../model/INewUser";
 
 const RegisterDate: React.FC = () => {
   const history = useHistory();

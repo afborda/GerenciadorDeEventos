@@ -12,6 +12,7 @@ const CustomInput: React.FC<IInputForm> = ({
 
   useEffect(() => {
     if (type === "password") setPassword(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

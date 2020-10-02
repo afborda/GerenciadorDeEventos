@@ -12,3 +12,13 @@ export interface INewUser {
   day_shifts: Option[];
   price: string;
 }
+
+export interface Weekday {
+  id: string;
+  value: string;
+}
+
+export interface Shift {
+  id: string;
+  value: string;
+}
