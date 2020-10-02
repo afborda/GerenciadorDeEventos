@@ -1,7 +1,7 @@
 import React, { FormEvent, useState, ChangeEvent } from "react";
 import { useHistory } from "react-router-dom";
 
-import Buttom from "../../shared/buttom";
+import Button from "../../shared/buttom";
 import Footer from "../../shared/form/footer";
 import CustomInput from "../../shared/form/Input";
 
@@ -47,7 +47,10 @@ const NewAccount: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="container-web">
+      <div>
+        <h1 className="title">Login</h1>
+      </div>
       <form onSubmit={handleSubmit} className="form-login">
         <CustomInput
           id="name"
@@ -72,7 +75,7 @@ const NewAccount: React.FC = () => {
           required
         />
 
-        <Buttom
+        <Button
           type="submit"
           textButton="Avançar"
           typeButton="buttom--internal space-buttom"

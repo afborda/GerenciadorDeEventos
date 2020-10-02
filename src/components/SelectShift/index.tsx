@@ -30,7 +30,7 @@ const SelectShift: React.FC<ISelectShift> = ({
   };
 
   return (
-    <div>
+    <div className="container-web-retangle">
       <p className="label">{label}</p>
       <ul className="list-item">
         {options?.map((option) => {

@@ -4,7 +4,7 @@ import CustomSelect from "../../shared/form/select";
 import SelectAvailableDay from "../SelectAvailableDay";
 import SelectShift from "../SelectShift";
 import CustomInput from "../../shared/form/Input";
-import Buttom from "../../shared/buttom";
+import Button from "../../shared/buttom";
 import {
   getDays,
   getCategory,
@@ -107,7 +107,7 @@ const RegisterDate: React.FC = () => {
           setValue={handleInputChange}
           required
         />
-        <Buttom
+        <Button
           type="submit"
           textButton="Criar conta"
           typeButton="buttom--internal"

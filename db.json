@@ -140,6 +140,142 @@
       ],
       "price": "459465654645654",
       "id": 5
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "defdfd",
+      "category": {
+        "id": "service",
+        "value": "Palhaço"
+      },
+      "week_days": [
+        {
+          "id": 3,
+          "value": "Q"
+        },
+        {
+          "id": 6,
+          "value": "S"
+        },
+        {
+          "id": 4,
+          "value": "Q"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 1,
+          "value": "Manha"
+        },
+        {
+          "id": 2,
+          "value": "Tarde"
+        }
+      ],
+      "price": "9000",
+      "id": 6
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "465465465",
+      "category": {
+        "id": "",
+        "value": ""
+      },
+      "week_days": [
+        {
+          "id": 6,
+          "value": "S"
+        },
+        {
+          "id": 5,
+          "value": "S"
+        },
+        {
+          "id": 2,
+          "value": "T"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 2,
+          "value": "Tarde"
+        }
+      ],
+      "price": "2000",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": {
+        "id": "service",
+        "value": "Palhaço"
+      },
+      "week_days": [
+        {
+          "id": 3,
+          "value": "Q"
+        },
+        {
+          "id": 4,
+          "value": "Q"
+        },
+        {
+          "id": 2,
+          "value": "T"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 1,
+          "value": "Manha"
+        },
+        {
+          "id": 2,
+          "value": "Tarde"
+        },
+        {
+          "id": 3,
+          "value": "Noite"
+        }
+      ],
+      "price": "200",
+      "id": 8
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "Brasil03",
+      "category": {
+        "id": "service",
+        "value": "Palhaço"
+      },
+      "week_days": [
+        {
+          "id": 3,
+          "value": "Q"
+        },
+        {
+          "id": 5,
+          "value": "S"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 2,
+          "value": "Tarde"
+        },
+        {
+          "id": 3,
+          "value": "Noite"
+        }
+      ],
+      "price": "2000",
+      "id": 9
     }
   ],
   "events": [

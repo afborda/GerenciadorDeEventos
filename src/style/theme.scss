@@ -92,7 +92,7 @@ $background-color-2: linear-gradient(180deg,
 }
 
 .card-container {
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,7 @@ $background-color-2: linear-gradient(180deg,
 
 .card {
   width: 100%;
-  height: 500px;
+  height: 450px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -132,6 +132,16 @@ $background-color-2: linear-gradient(180deg,
     display: inline-block !important;
   }
 
+  .input {
+    width: 400px;
+    height: 50px;
+    border: 1px solid $font-color-6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    background-color: $font-color-a;
+  }
+
   .card {
     width: 100%;
     height: 80vh;
@@ -150,12 +160,15 @@ $background-color-2: linear-gradient(180deg,
   }
 
   .title {
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 36px;
     line-height: 45px;
     color: $font-color-5;
+  }
+
+  .title {
+    @extend .title;
+    text-align: start;
   }
 
   .initiallogin-container {
@@ -197,9 +210,7 @@ $background-color-2: linear-gradient(180deg,
     width: 298px;
     height: 60px;
     border-radius: 5px;
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 20px;
     line-height: 25px;
     text-align: center;
@@ -227,6 +238,16 @@ $background-color-2: linear-gradient(180deg,
     color: $font-color-b;
   }
 
+  .buttom--internal {
+    @extend .buttom-web;
+    width: 400px;
+    height: 70px;
+    background: $background-color;
+    border-radius: 5px;
+    color: $font-color-1;
+    margin-bottom: 35px;
+  }
+
   .container-center-web {
     display: flex;
     justify-content: center;
@@ -238,6 +259,29 @@ $background-color-2: linear-gradient(180deg,
     height: 1px;
     width: 100%;
     background-color: $font-color-6;
-    margin-bottom: 96px;
+    margin-bottom: 35px;
+  }
+
+
+  .hide-web {
+    display: none;
+  }
+
+  .container-web {
+    width: 50%;
+    padding: 0 30px;
+  }
+
+  .select-container {
+    padding: 0 30px;
+  }
+
+  .input-select {
+    width: 400px;
+    height: 40px;
+    border: 1px solid $font-color-6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: $font-color-a;
   }
 }

@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 import { IUser } from "../../model/IUser";
+import Button from "../../shared/buttom";
 import Footer from "../../shared/form/footer";
 import CustomInput from "../../shared/form/Input";
 import LoginContainer from "../loginContainer";
@@ -40,7 +41,11 @@ const Login: React.FC = () => {
             />
 
             <div>
-              <button className="buttom--internal space-buttom">Entrar</button>
+              <Button
+                type="submit"
+                textButton="Entrar"
+                typeButton="buttom--internal space-buttom"
+              />
               <div className="forgot-my-password">
                 <Link to="/login">Esqueci minha senha</Link>
               </div>
