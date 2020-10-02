@@ -1,38 +1,160 @@
 {
-
-  "users": [{
-    "id": 1,
-    "name": "usuário teste",
-    "email": "teste@teste.com",
-    "password": "123",
-    "category": "magician",
-    "week_days": [
-      "monday",
-      "tuesday",
-      "wednesday",
-      "thursday",
-      "friday",
-      "saturday",
-      "sunday"
-    ],
-    "day_shifts": [
-      "morning",
-      "afternoon",
-      "night"
-    ],
-    "price": 200
-  }],
-  "events": [{
-    "id": 1,
-    "user_id": 1,
-    "name": "evento teste",
-    "date": "1574433747316",
-    "week_day": "friday",
-    "day_shift": "morning",
-    "address": "Rua Teste, 200 - 221B"
-  }],
-
-  "week_days": [{
+  "users": [
+    {
+      "id": 1,
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": {
+        "id": "",
+        "value": ""
+      },
+      "day_shifts": [
+        {
+          "id": "",
+          "value": ""
+        }
+      ],
+      "price": "",
+      "week_days": [
+        {
+          "id": "",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "13213213212",
+      "category": {
+        "id": "",
+        "value": ""
+      },
+      "week_days": [],
+      "day_shifts": [],
+      "price": "",
+      "id": 2
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "516651561651651",
+      "category": {
+        "id": "service",
+        "value": "Palhaço"
+      },
+      "week_days": [
+        {
+          "id": 3,
+          "value": "Q"
+        },
+        {
+          "id": 5,
+          "value": "S"
+        },
+        {
+          "id": 7,
+          "value": "D"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 2,
+          "value": "Tarde"
+        },
+        {
+          "id": 3,
+          "value": "Noite"
+        }
+      ],
+      "price": "459465654645654",
+      "id": 3
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "516651561651651",
+      "category": {
+        "id": "service",
+        "value": "Palhaço"
+      },
+      "week_days": [
+        {
+          "id": 3,
+          "value": "Q"
+        },
+        {
+          "id": 5,
+          "value": "S"
+        },
+        {
+          "id": 7,
+          "value": "D"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 2,
+          "value": "Tarde"
+        },
+        {
+          "id": 3,
+          "value": "Noite"
+        }
+      ],
+      "price": "459465654645654",
+      "id": 4
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "516651561651651",
+      "category": {
+        "id": "service",
+        "value": "Palhaço"
+      },
+      "week_days": [
+        {
+          "id": 3,
+          "value": "Q"
+        },
+        {
+          "id": 5,
+          "value": "S"
+        },
+        {
+          "id": 7,
+          "value": "D"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 2,
+          "value": "Tarde"
+        },
+        {
+          "id": 3,
+          "value": "Noite"
+        }
+      ],
+      "price": "459465654645654",
+      "id": 5
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "name": "evento teste",
+      "date": "1574433747316",
+      "week_day": "friday",
+      "day_shift": "morning",
+      "address": "Rua Teste, 200 - 221B"
+    }
+  ],
+  "week_days": [
+    {
       "id": 1,
       "value": "S"
     },
@@ -61,9 +183,8 @@
       "value": "D"
     }
   ],
-
-
-  "category": [{
+  "category": [
+    {
       "id": 1,
       "value": "Palhaço"
     },
@@ -76,8 +197,8 @@
       "value": "Malabarista"
     }
   ],
-
-  "day_shift": [{
+  "day_shift": [
+    {
       "id": 1,
       "value": "Manha"
     },
@@ -89,7 +210,5 @@
       "id": 3,
       "value": "Noite"
     }
-
   ]
-
 }

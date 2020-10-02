@@ -1,13 +1,9 @@
 import api from "../axiosConfig";
+import { INewUser } from "../../model/INewUser";
 
-const RegisterUser = async (newUser: any) => {
-  const response = await api.post("user-add", newUser, {
-    params: {
-      type: "json",
-    },
-  });
-
-  return response.data.data;
+const RegisterUser = async (newUser: INewUser) => {
+  const response = await api.post("users", newUser);
+  return response.data;
 };
 
 export default RegisterUser;

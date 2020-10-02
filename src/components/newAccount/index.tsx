@@ -1,27 +1,16 @@
 import React, { FormEvent, useState, ChangeEvent } from "react";
 import { useHistory } from "react-router-dom";
+
+import { registerUser } from "../../service/userService";
+
 import Buttom from "../../shared/buttom";
 import Footer from "../../shared/form/footer";
 import CustomInput from "../../shared/form/Input";
 
+import { INewUser, Option } from "../../model/INewUser";
 import { useNewUser } from "../../hooks";
 
 import "./style.scss";
-
-interface Option {
-  id: string;
-  value: string;
-}
-
-interface INewUser {
-  name: string;
-  email: string;
-  password: string;
-  category: Option;
-  week_days: Option[];
-  day_shifts: Option[];
-  price: string;
-}
 
 const NewAccount: React.FC = () => {
   const history = useHistory();
@@ -44,10 +33,11 @@ const NewAccount: React.FC = () => {
     setNewUserFormData({ ...newUserFormData, [name]: value });
   };
 
-  const handleSubmit = (event: FormEvent) => {
+  const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
 
     const { name, email, password } = newUserFormData;
+
     setNewUser({
       ...newUser,
       name,
@@ -57,6 +47,7 @@ const NewAccount: React.FC = () => {
 
     history.push("/register-form-date");
   };
+
   return (
     <div>
       <form onSubmit={handleSubmit} className="form-login">
