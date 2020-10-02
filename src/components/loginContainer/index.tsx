@@ -8,13 +8,16 @@ const LoginContainer: React.FC<ILoginContainer> = ({
   title,
 }) => {
   return (
-    <div className="background-login-image">
-      <div className="title-login">
-        <h1>{title}</h1>
-      </div>
-      <div className="card-container">
-        <div className={!card ? "card card--background " : "card"}>
-          {children}
+    <div className="background-web">
+      <div className="nav-bar"></div>
+      <div className="background-login-image  ">
+        <div className="title-login ">
+          <h1 className="title-web">{title}</h1>
+        </div>
+        <div className="card-container">
+          <div className={!card ? "card card--background " : "card"}>
+            {children}
+          </div>
         </div>
       </div>
     </div>
