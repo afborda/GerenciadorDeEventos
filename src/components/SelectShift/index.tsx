@@ -1,18 +1,8 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { useState } from "react";
+import { Option } from "../../model/INewUser";
+import { ISelectShift } from "../../model/props/ISelect";
 
 import "./index.scss";
-
-interface Option {
-  id: string;
-  value: string;
-}
-
-interface ISelectShift {
-  options: Option[];
-  setValue: Dispatch<SetStateAction<Option[]>>;
-  label: string;
-  className?: string;
-}
 
 const SelectShift: React.FC<ISelectShift> = ({
   setValue,

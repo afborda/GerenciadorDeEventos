@@ -1,17 +1,6 @@
-import React, { Dispatch, SelectHTMLAttributes, SetStateAction } from "react";
-
-interface Option {
-  id: string;
-  value: string;
-}
-
-interface Iselect {
-  options: Option[];
-  value: Option;
-  setValue: Dispatch<SetStateAction<Option>>;
-  id: string;
-  label: string;
-}
+import React from "react";
+import { Option } from "../../../model/INewUser";
+import { Iselect } from "../../../model/props/ISelect";
 
 const CustomSelect: React.FC<Iselect> = ({
   options,

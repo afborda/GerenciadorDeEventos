@@ -1,13 +1,11 @@
 import React, { FormEvent, useState, ChangeEvent } from "react";
 import { useHistory } from "react-router-dom";
 
-import { registerUser } from "../../service/userService";
-
 import Buttom from "../../shared/buttom";
 import Footer from "../../shared/form/footer";
 import CustomInput from "../../shared/form/Input";
 
-import { INewUser, Option } from "../../model/INewUser";
+import { INewUser } from "../../model/INewUser";
 import { useNewUser } from "../../hooks";
 
 import "./style.scss";

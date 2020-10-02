@@ -1,12 +1,12 @@
 import React from "react";
+import { ILoginContainer } from "../../model/props/ILoginContainer";
 import "./style.scss";
 
-interface ILogin {
-  card?: boolean;
-  title?: string;
-}
-
-const LoginContainer: React.FC<ILogin> = ({ children, card, title }) => {
+const LoginContainer: React.FC<ILoginContainer> = ({
+  children,
+  card,
+  title,
+}) => {
   return (
     <div className="background-login-image">
       <div className="title-login">

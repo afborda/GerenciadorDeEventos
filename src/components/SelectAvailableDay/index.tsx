@@ -1,17 +1,7 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { useState } from "react";
+import { Option } from "../../model/INewUser";
+import { ISelectAvailableDay } from "../../model/props/ISelect";
 import "./style.scss";
-
-interface Option {
-  id: string;
-  value: string;
-}
-
-interface ISelectAvailableDay {
-  options: Option[];
-  setValue: Dispatch<SetStateAction<Option[]>>;
-  label: string;
-  className?: string;
-}
 
 const SelectAvailableDay: React.FC<ISelectAvailableDay> = ({
   setValue,

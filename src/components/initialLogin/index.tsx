@@ -1,6 +1,5 @@
 import React from "react";
 import LoginContainer from "../loginContainer";
-import Buttom from "../../shared/buttom";
 
 import "./styled.scss";
 import { Link } from "react-router-dom";

@@ -1,5 +1,4 @@
-import { SetStateAction, ChangeEvent } from "react";
-import { Dispatch } from "react";
+import { ChangeEvent } from "react";
 export interface IInputForm {
   label: string;
   id: string;
