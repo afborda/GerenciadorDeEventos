@@ -276,6 +276,84 @@
       ],
       "price": "2000",
       "id": 9
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "13123123123123",
+      "category": {
+        "id": "service",
+        "value": "Palhaço"
+      },
+      "week_days": [
+        {
+          "id": 2,
+          "value": "T"
+        },
+        {
+          "id": 3,
+          "value": "Q"
+        },
+        {
+          "id": 7,
+          "value": "D"
+        },
+        {
+          "id": 5,
+          "value": "S"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 2,
+          "value": "Tarde"
+        },
+        {
+          "id": 3,
+          "value": "Noite"
+        }
+      ],
+      "price": "200",
+      "id": 10
+    },
+    {
+      "name": "Abner Fonseca",
+      "email": "admin@admin",
+      "password": "4545465",
+      "category": {
+        "id": "service",
+        "value": "Palhaço"
+      },
+      "week_days": [
+        {
+          "id": 2,
+          "value": "T"
+        },
+        {
+          "id": 4,
+          "value": "Q"
+        },
+        {
+          "id": 7,
+          "value": "D"
+        },
+        {
+          "id": 6,
+          "value": "S"
+        }
+      ],
+      "day_shifts": [
+        {
+          "id": 2,
+          "value": "Tarde"
+        },
+        {
+          "id": 3,
+          "value": "Noite"
+        }
+      ],
+      "price": "200",
+      "id": 11
     }
   ],
   "events": [
