@@ -53,15 +53,17 @@
 
 ### `Executando aplicação`
 
-1. Faça o clone do prjeto
+1. Faça o clone do projeto
 1. Abra o projeto em seu VScode
 1. Abra o Terminal do VScode
 1. Execute yarn install ou npm install
-1. Execute yarn start (e aguardar sua aplicação subir )
+1. Execute yarn start (e aguarde sua aplicação subir )
 1. Execute yarn startDB ( para que seu banco de dados suba em uma porta diferente de sua aplicação)
 1. Coloque na barra de busca do seu navegador http://localhost:3000/
    Tudo pronto!
 
-[BREVE EXPLICAÇÂO DO SISTEMA] (https://drive.google.com/file/d/1cXegrHk1Dqh3qAIfRmJjx1CYH6Uqaltw/view)
-
 Obs: Caso de erro de 401 jfrog remova o yarn.lock e de yarn install ou npm install novamente
+
+## `Video Abner Fonseca`
+
+[BREVE EXPLICAÇÂO DO SISTEMA](https://drive.google.com/file/d/1cXegrHk1Dqh3qAIfRmJjx1CYH6Uqaltw/view).
