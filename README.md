@@ -62,6 +62,6 @@
 1. Coloque na barra de busca do seu navegador http://localhost:3000/
    Tudo pronto!
 
-[BREVE EXPLICAÇÂO DO SISTEMA] (https://drive.google.com/file/d/1cXegrHk1Dqh3qAIfRmJjx1CYH6Uqaltw/view)
+[BREVE EXPLICAÇÂO DO SISTEMA ] (https://drive.google.com/file/d/1cXegrHk1Dqh3qAIfRmJjx1CYH6Uqaltw/view)
 
 Obs: Caso de erro de 401 jfrog remova o yarn.lock e de yarn install ou npm install novamente
