@@ -47,7 +47,10 @@ const NewAccount: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="container-web">
+      <div>
+        <h1 className="title">Login</h1>
+      </div>
       <form onSubmit={handleSubmit} className="form-login">
         <CustomInput
           id="name"

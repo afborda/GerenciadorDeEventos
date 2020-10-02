@@ -21,6 +21,7 @@ const Routes: React.FC = () => (
       path="/register-form-date"
       component={RegisterDate}
     />
+    <Route name="register-form" path="*" component={InitialLogin} />
   </Switch>
 );
 

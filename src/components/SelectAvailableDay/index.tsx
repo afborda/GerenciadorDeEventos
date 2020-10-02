@@ -29,7 +29,7 @@ const SelectAvailableDay: React.FC<ISelectAvailableDay> = ({
   };
 
   return (
-    <div>
+    <div className="container-web-circle">
       <p className="label">{label}</p>
       <ul className="list-item">
         {options?.map((option) => {

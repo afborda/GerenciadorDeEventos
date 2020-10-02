@@ -11,7 +11,7 @@ const CustomSelect: React.FC<Iselect> = ({
   ...props
 }) => {
   return (
-    <div style={{ display: "grid" }}>
+    <div className="select-container" style={{ display: "grid" }}>
       <label className="label" htmlFor={label}>
         {label}
       </label>
