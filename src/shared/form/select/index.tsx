@@ -1,4 +1,5 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React, { Dispatch, SelectHTMLAttributes, SetStateAction } from "react";
+
 interface Option {
   id: string;
   value: string;
@@ -7,7 +8,7 @@ interface Option {
 interface Iselect {
   options: Option[];
   value: Option;
-  setValue: Dispatch<SetStateAction<any>>;
+  setValue: Dispatch<SetStateAction<Option>>;
   id: string;
   label: string;
 }
@@ -29,7 +30,7 @@ const CustomSelect: React.FC<Iselect> = ({
         id={id}
         className="input-select"
         value={value.value}
-        onChange={({ target: option }) => setValue(option)}
+        onChange={({ target: { id, value } }) => setValue({ id, value })}
         {...props}
       >
         <option value="" disabled>

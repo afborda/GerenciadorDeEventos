@@ -4,21 +4,7 @@ import React, {
   Dispatch,
   SetStateAction,
 } from "react";
-
-interface Option {
-  id: string;
-  value: string;
-}
-
-interface INewUser {
-  name: string;
-  email: string;
-  password: string;
-  category: Option;
-  week_days: Option[];
-  day_shifts: Option[];
-  price: string;
-}
+import { INewUser } from "../../model/INewUser";
 
 const NewUserContext = createContext<{
   state: INewUser;
